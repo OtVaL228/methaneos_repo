@@ -3,4 +3,5 @@
   "update_available": 0,
   "update_type": "pacman_s",
   "packages": "linux-methane"
+  "lpackages": ""
 }
