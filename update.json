@@ -1,6 +1,6 @@
 {
   "full_update": 0,
   "update_available": 0,
-  "update_type": "pacman_s",
+  "update_type": "pacman_s", #avaliable types: pacman_s, pacman_u, pacman, system
   "packages": "linux-methane"
 }
