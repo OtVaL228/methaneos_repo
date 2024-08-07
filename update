@@ -1,5 +1,5 @@
 full_update=0
-update_available=1
+update_available=0
 update_type=pacman_u #avaliable types: pacman_s, pacman_u, pacman, system
 packages=
 lpackages=(linux-methane-6.10.3.arch1-2-x86_64.pkg.tar.zst linux-methane-headers-6.10.3.arch1-2-x86_64.pkg.tar.zst linux-v6.10.3-arch1.patch.zst)
