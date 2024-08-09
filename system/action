@@ -1,0 +1,3 @@
+remove=
+cp=("etc/updater/dummy" "/etc/updater")
+chmod=
