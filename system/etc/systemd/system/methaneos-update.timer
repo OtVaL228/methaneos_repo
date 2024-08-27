@@ -1,0 +1,9 @@
+[Unit]
+Description=Run MethaneOS Update Check Weekly
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

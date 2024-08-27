@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Check for root privileges
+if [[ $EUID -ne 0 ]]; then
+   kdialog --error "This script must be run as root" --title "Error"
+   exit 1
+fi
+
+# Ask if the user wants to enable or disable the session
+ACTION=$(kdialog --menu "Choose an action:" enable "Enable Session" disable "Disable Session" --title "Session Management")
+
+# If the user cancels the action, exit the script
+if [ $? -ne 0 ]; then
+    exit 0
+fi
+
+# Define the path for the configuration file
+CONFIG_FILE="/etc/sddm.conf.d/steamos.conf"
+
+if [ "$ACTION" == "enable" ]; then
+    # Prompt the user for the username
+    USER=$(kdialog --inputbox "Enter the username to enable session for:" --title "Enable Session")
+
+    # If the user cancels the input, exit the script
+    if [ $? -ne 0 ]; then
+        exit 0
+    fi
+
+    # Create or overwrite the steamos.conf file with the required settings
+    echo "[Autologin]" > $CONFIG_FILE
+    echo "Relogin=true" >> $CONFIG_FILE
+    echo "Session=gamescope-session.desktop" >> $CONFIG_FILE
+    echo "User=$USER" >> $CONFIG_FILE
+
+    kdialog --msgbox "Session enabled for user $USER" --title "Success"
+
+elif [ "$ACTION" == "disable" ]; then
+    # Check if the configuration file exists
+    if [ -f "$CONFIG_FILE" ]; then
+        # Delete the configuration file
+        rm "$CONFIG_FILE"
+        kdialog --msgbox "Session disabled" --title "Success"
+    else
+        kdialog --sorry "Session is already disabled" --title "Information"
+    fi
+fi

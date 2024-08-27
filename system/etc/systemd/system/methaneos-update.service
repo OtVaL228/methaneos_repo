@@ -1,0 +1,6 @@
+[Unit]
+Description=Check for MethaneOS Updates
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/methaneos-update check
