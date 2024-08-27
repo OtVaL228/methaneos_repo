@@ -1,0 +1,6 @@
+full_update=0
+update_available=1
+update_type=("pacman_u" "pacman_s" "pacman_r" "system") #avaliable types: pacman_r pacman_s, pacman_u, pacman, system
+packages=("fuse2" "fuse3")
+rpackages=("linux" "linux-headers" "broadcom-wl")
+lpackages=("linux-methane-6.10.3-2-x86_64.pkg.tar.zst" "linux-methane-headers-6.10.3-2-x86_64.pkg.tar.zst" "methaneos-updater-0.3-2-x86_64.pkg.tar.zst")
