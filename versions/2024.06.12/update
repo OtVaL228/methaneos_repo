@@ -1,0 +1,6 @@
+full_update=0
+update_available=1
+update_type=("system") #ONLY FOR TESTING!!!
+packages=("")
+rpackages=("")
+lpackages=("")
