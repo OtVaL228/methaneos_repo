@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "branch": "dev",
+  "update_available": true,
+  "description": "Исправления багов и оптимизация производительности.",
+  "changelog": [
+    "TEST",
+    "TEST",
+    "MethaneOS TEST"
+  ],
+  "release_date": "2025-01-10"
+}
