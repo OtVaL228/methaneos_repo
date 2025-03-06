@@ -1,6 +1,6 @@
 {
-  "version": "1.01",
-  "minver": "1.00",
+  "version": "1.02",
+  "minver": "1.01",
   "branch": "dev",
   "update_available": true,
   "actions": [
