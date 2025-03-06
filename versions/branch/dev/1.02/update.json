@@ -1,0 +1,25 @@
+{
+  "version": "1.02",
+  "minver": "1.01",
+  "branch": "dev",
+  "update_available": true,
+  "actions": [
+    {
+      "type": "kernel",
+      "enabled": false,
+      "path": "/tmp/update/mount/vmlinuz",
+      "initramfs": "/tmp/update/mount/initramfs-linux.img",
+      "destination": "/boot"
+    },
+    {
+      "type": "pacman",
+      "enabled": false,
+      "packages": ["/tmp/update/mount/package1.pkg.tar.zst", "/tmp/update/mount/package2.pkg.tar.zst"]
+    },
+    {
+      "type": "script",
+      "enabled": true,
+      "script_path": "/tmp/update/mount/action.sh"
+    }
+  ]
+}
