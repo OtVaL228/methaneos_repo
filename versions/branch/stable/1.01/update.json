@@ -2,7 +2,7 @@
   "version": "1.01",
   "minver": "1.00",
   "branch": "stable",
-  "update_available": false,
+  "update_available": true,
   "actions": [
     {
       "type": "kernel",
@@ -13,8 +13,8 @@
     },
     {
       "type": "pacman",
-      "enabled": false,
-      "packages": ["/tmp/update/mount/package1.pkg.tar.zst", "/tmp/update/mount/package2.pkg.tar.zst"]
+      "enabled": true,
+      "packages": ["/tmp/update/mount/linux-methane-6.14-2-x86_64.pkg.tar.zst", "/tmp/update/mount/linux-methane-headers-6.14-2-x86_64.pkg.tar.zst"]
     },
     {
       "type": "script",
