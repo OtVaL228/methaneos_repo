@@ -15,7 +15,7 @@
     {
       "type": "pacman",
       "enabled": true,
-      "packages": ["/tmp/update/mount/linux-headers-6.14.methane-0-x86_64.pkg.tar.zst"]
+      "packages": ["/tmp/update/mount/linux-6.14.methane-0-x86_64.pkg.tar.zst"]
     },
     {
       "type": "script",
