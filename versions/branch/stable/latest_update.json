@@ -1,6 +1,6 @@
 {
   "version": "1.03",
-  "minver": "1.02",
+  "minver": "1.01",
   "branch": "stable",
   "changelog": "Added changelog, fixed gamescope session, updated kernel with new wifi drivers and added virtual keyboard to lightdm... P.S MethaneUP will be fixed in 1.04.",
   "update_available": true
