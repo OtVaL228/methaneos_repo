@@ -2,7 +2,7 @@
   "version": "1.02",
   "minver": "1.01",
   "branch": "stable",
-  "changelog": "Added changelog, fixed gamescope session, updated kernel with new wifi drivers and added virtual keyboard to lightdm...",
+  "changelog": "Added changelog, fixed gamescope session, updated kernel with new wifi drivers and added virtual keyboard to lightdm... P.S MethaneUP will be fixed in 1.03.",
   "update_available": true,
   "actions": [
     {
@@ -15,7 +15,7 @@
     {
       "type": "pacman",
       "enabled": true,
-      "packages": ["/tmp/update/mount/linux-methane-6.14-2-x86_64.pkg.tar.zst", "/tmp/update/mount/linux-methane-headers-6.14-2-x86_64.pkg.tar.zst"]
+      "packages": ["/tmp/update/mount/linux-headers-6.14.methane-0-x86_64.pkg.tar.zst"]
     },
     {
       "type": "script",
