@@ -2,6 +2,7 @@
   "version": "1.02",
   "minver": "1.01",
   "branch": "dev",
+  "changelog": "Added changelog, fixed gamescope session, updated kernel with new wifi drivers and added virtual keyboard to lightdm...",
   "update_available": true,
   "actions": [
     {
