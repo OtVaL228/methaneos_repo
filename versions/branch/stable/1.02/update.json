@@ -1,0 +1,26 @@
+{
+  "version": "1.02",
+  "minver": "1.01",
+  "branch": "stable",
+  "changelog": "Added changelog, fixed gamescope session, updated kernel with new wifi drivers and added virtual keyboard to lightdm...",
+  "update_available": true,
+  "actions": [
+    {
+      "type": "kernel",
+      "enabled": false,
+      "path": "/tmp/update/mount/vmlinuz",
+      "initramfs": "/tmp/update/mount/initramfs-linux.img",
+      "destination": "/boot"
+    },
+    {
+      "type": "pacman",
+      "enabled": true,
+      "packages": ["/tmp/update/mount/linux-methane-6.14-2-x86_64.pkg.tar.zst", "/tmp/update/mount/linux-methane-headers-6.14-2-x86_64.pkg.tar.zst"]
+    },
+    {
+      "type": "script",
+      "enabled": true,
+      "script_path": "/tmp/update/mount/action.sh"
+    }
+  ]
+}
